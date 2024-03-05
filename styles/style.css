@@ -42,13 +42,11 @@
 .header__logo {
     position: absolute;
     padding-left: 454px;
-}
-
-.header__logo {
     display: inline-block;
     width: 148px;
     height: 105px;
 }
+
 
 .header__address {
     padding-right: 12px;
@@ -311,7 +309,7 @@ margin-top: 38px;
     grid-column: 2;
 }
 
-.about__text p{
+.about__text p {
     font-weight: 400;
 font-size: 20px;
 line-height: 120%;
@@ -335,10 +333,6 @@ margin-bottom: 23px;
     list-style: none;
 }
 
-.footer__menu {
-    text-align: center ;
-}
-
 .footer__social-list-item {
     list-style: none;
  
@@ -355,7 +349,7 @@ margin-bottom: 23px;
     color: #000;
     text-underline-offset: 5px;
     margin-left: 171px;
-
+    text-align: center ;
 }
 
 .footer__address {
