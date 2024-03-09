@@ -1,6 +1,5 @@
-p {
-  z-index: 1;
-}
+
+  /* Header-start */
 
 .header__menu {
   display: flex;
@@ -8,13 +7,7 @@ p {
   align-items: center;
   margin: 92px 24px 96px 24px;
   position: relative;
-  width: 1052px;
-  height: 105px;
-}
-
-.header__links-lisk ul {
-  display: flex;
-  list-style: circle;
+  max-width: 1052px;
 }
 
 .header__links-lisk {
@@ -24,32 +17,18 @@ p {
   font-weight: 400;
   font-size: 18px;
   color: #000;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
+  display: flex;
+  list-style: circle;
 }
 
-.header__links-lisk li:hover {
-  color: blue;
-  transition: 0.9s;
-}
-
-.header__links-lisk a {
-  padding-right: 33px;
+.heading-nav {
+  margin-right: 34px;
+  padding-top: 3px;
 }
 
 .none-marker {
   list-style-type: none;
-}
-
-.header__links-lisk span a {
-  text-decoration: none;
-}
-
-.header__logo {
-  position: absolute;
-  margin-left: 454px;
-  display: inline-block;
-  width: 148px;
-  height: 105px;
 }
 
 .header__address {
@@ -59,30 +38,31 @@ p {
   line-height: 135%;
   color: #000;
   margin-right: 49px;
-  text-underline-offset: 5px;
-}
-
-address {
+  text-underline-offset: 6px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  color: #000;
 }
 
 .img-logo {
   display: block;
   width: 148px;
   height: 105px;
+  margin: 0 183px 0px 0px;
+} 
+
+.none-decoration {
+  text-decoration: none;
 }
 
-.cover-bg {
+/* Header-end */
+
+/* Cover-start */
+
+.cover {
   background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 757px;
+  min-height: 757px;
   position: relative;
 }
 
@@ -95,42 +75,46 @@ address {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.letter-default {
+  letter-spacing: 0.3em;
+}
+
+.letter-more {
+  letter-spacing: 0.6em;
+  margin-left: 31px;
+}
+
 .cover-title {
   font-weight: 700;
   font-size: 100px;
-  line-height: 123%;
+  line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
-  padding: 165px 50px 0 50px;
-}
-
-.cover {
+  padding: 165px 50px 0px 50px;
+  z-index: 1;
   position: relative;
 }
 
-span.cover-title-span {
-  position: relative;
+.cover-title-text {
   display: flex;
   flex-direction: column;
-  z-index: 1000;
 }
 
-span.nth-title {
+.cover-title-text-center {
   display: flex;
   align-self: center;
+  line-height: 100%;
+  padding-top: 20px;
 }
 
-span.last-title {
-  align-self: end;
+.cover-title-text-end {
+  padding-left: 553px;
+  padding-top: 20px;
+  line-height: 100%;
 }
 
 .cover-description {
-  position: absolute;
-  top: 654px;
-}
-
-.cover-description-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 127%;
@@ -140,27 +124,27 @@ span.last-title {
   word-spacing: 19px;
   display: flex;
   align-items: center;
+  padding-top: 135px;
+  position: relative;
 }
 
-.bet-button {
-  margin-left: 76px;
-}
-
-button {
+.button-submit {
+  padding: 12px 32px 11px 31px;
+  margin-left: 75px;
+  background: none;
+  border-color: #fff;
+  border-style: solid;
   padding: 12px 32px 11px 31px;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-}
+} 
 
-.button-submit {
-  padding: 12px 32px 11px 31px;
-  background: none;
-  border-color: #fff;
-  border-style: solid;
-}
+/* Cover-end */
+
+/* Lots-start */
 
 .lots {
   margin-top: 179px;
@@ -179,10 +163,7 @@ button {
   width: 1052px;
   margin: 0 auto;
   display: flex;
-}
-
-.lots__card-list ul {
-  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -191,37 +172,31 @@ button {
   position: relative;
 }
 
-.lots__card-list-item a {
+.card-link {
   text-decoration: none;
 }
 
 .card {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -233,6 +208,7 @@ button {
   text-decoration-skip-ink: none;
   color: #fff;
   padding: 51px 40px 0 40px;
+  z-index: 1;
 }
 
 .card__text {
@@ -241,29 +217,38 @@ button {
   line-height: 120%;
   color: #fff;
   margin: 0 40px 49px 40px;
+  z-index: 1;
 }
 
 .lots__look-more-link {
   font-weight: 400;
   font-size: 20px;
   color: #000;
-  margin: 30px 0 0 24px;
-  padding-left: 40px;
   text-underline-offset: 5px;
 }
+
+.lots__look-more-text {
+  margin: 30px 0 0 64px;
+}
+
+/* Lots-end */
+
+/* About-start */
 
 .about {
   display: grid;
   grid-template-columns: 359px auto;
   grid-template-rows: 283px 314px;
   width: 1052px;
-  margin: 146px auto;
+  margin: 0 auto;
+  padding-top: 146px;
 }
 
 .about__column {
   display: grid;
-  margin-top: 36px;
+  margin-top: 33px;
   margin-left: 47px;
+
 }
 
 .about__logo-image {
@@ -291,14 +276,14 @@ button {
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
-  margin-top: 38px;
+  margin-top: 34px;
 }
 
 .about--txt {
   grid-column: 2;
 }
 
-.about__text p {
+.about__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -306,6 +291,10 @@ button {
   color: #000;
   margin-bottom: 23px;
 }
+
+/* About-end */
+
+/* Footer-start */
 
 .footer {
   display: flex;
@@ -340,7 +329,7 @@ button {
   margin-left: 36px;
 }
 
-.footer__menu li:hover {
+.footer__menu-list-item:hover {
   color: blue;
   transition: 0.9s;
 }
@@ -349,6 +338,8 @@ button {
   font-size: 18px;
   color: #000;
   text-underline-offset: 5px;
+  line-height: 135%;
+  font-style: normal;
 }
 
 .first-heading {
@@ -382,3 +373,10 @@ span.last-heading {
     width: 241px;
     justify-content: space-between;
 }
+
+.heading-nav:hover {
+  color: blue;
+  transition: 0.9s;
+}
+
+/* Footer-end */
