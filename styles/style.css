@@ -18,7 +18,6 @@
   font-size: 18px;
   color: #000;
   text-underline-offset: 4px;
-  display: flex;
   list-style: circle;
 }
 
@@ -129,7 +128,6 @@
 }
 
 .button-submit {
-  padding: 12px 32px 11px 31px;
   margin-left: 75px;
   background: none;
   border-color: #fff;
