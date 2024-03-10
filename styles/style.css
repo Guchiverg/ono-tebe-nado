@@ -163,11 +163,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  padding-bottom: 30px;
 }
 
 .lots__card-list-item {
   list-style-type: none;
-  max-height: 563px;
+  min-height: 563px;
 }
 
 .card-link {
@@ -192,7 +193,6 @@
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  max-height: 563px;
 }
 
 .card_type_picture {
@@ -225,9 +225,6 @@
   font-size: 20px;
   color: #000;
   text-underline-offset: 5px;
-}
-
-.lots__look-more-text {
   margin: 30px 0 0 64px;
 }
 
@@ -340,27 +337,6 @@
   text-underline-offset: 5px;
   line-height: 135%;
   font-style: normal;
-}
-
-.first-heading {
-  margin-left: 31px;
-}
-
-.nth-heading {
-  padding-right: 30px;
-}
-
-.nth-heading-end {
-  margin-right: 25px;
-}
-
-.last-heading {
-  margin-left: 15px;
-}
-
-span.last-heading {
-  margin-left: 32px;
-  letter-spacing: 1.2rem;
 }
 
 .hover_blue:hover {
